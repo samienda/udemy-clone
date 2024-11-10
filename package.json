@@ -7,16 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/ui": "^2.19.2",
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.2.0"
   }
-}
+  }
