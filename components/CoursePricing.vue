@@ -13,7 +13,13 @@
       </div>
 
       <!-- <PricingTabs /> -->
-   
+      <div>
+        <CoursePricingTab v-model="activeTab" />
+          <ClientOnly>
+            <CourseSubscriptionTab  v-if="activeTab === 'personal'" />
+            <TeamsCard v-else />
+          </ClientOnly>
+      </div>
 
  
     </div>
@@ -24,6 +30,8 @@
 import { useScroll } from '@vueuse/core'
 
 const { y } = useScroll(window)
+
+const activeTab = useState('activeTab', () => 'personal')
 
 // Add scroll-based opacity transition if needed
 </script>
