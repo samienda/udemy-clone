@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/', // Required for GitHub Pages (replace 'your-repo-name' with the actual repo name)
+    baseURL: '/udemy-clone/', // Required for GitHub Pages (replace 'your-repo-name' with the actual repo name)
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
