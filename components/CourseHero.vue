@@ -12,6 +12,14 @@
         />
       </div>
 
+      <div>
+        <CoursePricingTab v-model="activeTab" />
+          <ClientOnly>
+            <CourseSubscriptionTab  v-if="activeTab === 'personal'" />
+            <TeamsCard v-else />
+          </ClientOnly>
+      </div>
+
     </div>
 
     <!-- Desktop Floating Video Card -->
@@ -93,3 +101,6 @@
   color: #6b7280;
 }
 </style>
+
+<script setup>
+const activeTab = useState('activeTab', () => 'personal')</script>
